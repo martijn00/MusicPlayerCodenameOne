@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Container" name="ViewPlaylistRow" cloudDestinationProperty="ViewPlaylistRow" uiid="ViewPlaylistRow" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+  <component type="Button" name="btnPlaylistActionFixed" cloudDestinationProperty="Button" uiid="RowActionButton" text="" icon="options_static.png" rolloverIcon="options_static.png" pressedIcon="options_static.png" >
+    <layoutConstraint value="East" />
+  </component>
+  <component type="Container" name="ctnPlaylistRowText" cloudDestinationProperty="Container" layout="GridLayout" gridLayoutRows="2" gridLayoutColumns="1" >
+    <layoutConstraint value="Center" />
+    <component type="Label" name="lblPlaylistRowTitle" cloudDestinationProperty="Label" uiid="PlaylistTitle" text="PlaylistTitle" verticalAlignment="4" textPosition="1" >
+    </component>
+    <component type="Label" name="lblPlaylistRowItems" cloudDestinationProperty="Label1" uiid="PlaylistItemsCountText" text="0 items" gap="0" verticalAlignment="4" textPosition="3" >
+    </component>
+  </component>
+  <component type="Button" name="btnMediaIcon" cloudDestinationProperty="Button" uiid="RowIcon" text="" icon="playlist_icon.png" >
+    <layoutConstraint value="West" />
+  </component>
+</component>

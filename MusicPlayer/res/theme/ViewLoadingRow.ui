@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Container" name="ViewLoadingRow" cloudDestinationProperty="ViewLoadingRow" uiid="ViewLoadingRow" scrollVisible="true" layout="BoxLayout" boxLayoutAxis="Y" >
+  <component type="Container" name="Container" cloudDestinationProperty="Container" uiid="LoadingContainer" layout="BorderLayout" borderLayoutAbsoluteCenter="true" >
+    <component type="InfiniteProgress" name="InfiniteProgress" cloudDestinationProperty="InfiniteProgress" >
+      <layoutConstraint value="Center" />
+      <custom name="animation" type="com.codename1.ui.Image" value="loading_spinner.png" />
+    </component>
+  </component>
+</component>

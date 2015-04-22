@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="ScreenLanguage" cloudDestinationProperty="ScreenLanguage" uiid="FormWhite" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="Choose language" >
+  <component type="List" name="ctlAllLanguages" cloudDestinationProperty="ctlAllLanguages" itemGap="0"  selectedRenderer="ViewLanguageRow" unselectedRenderer="ViewLanguageRow" >
+    <layoutConstraint value="Center" />
+    <mapItems>
+      <stringItem key="lblIsChosen" value="" />
+      <stringItem key="lblLanguage" value="German" />
+    </mapItems>
+    <mapItems>
+      <stringItem key="lblIsChosen" value="" />
+      <stringItem key="lblLanguage" value="Chineese" />
+    </mapItems>
+    <mapItems>
+      <stringItem key="lblIsChosen" value="" />
+      <stringItem key="lblLanguage" value="Russian" />
+    </mapItems>
+  </component>
+</component>

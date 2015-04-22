@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="ScreenPlayer" cloudDestinationProperty="ScreenPlayer" uiid="FormWhite" scrollableY="false" layout="TableLayout" tableLayoutRows="2" tableLayoutColumns="1" title="Now playing" >
+  <component type="Container" name="ctnPlayerCover" cloudDestinationProperty="Container4" scrollableY="false" layout="LayeredLayout" >
+    <layoutConstraint row="0" column="-1" height="62" width="100" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+    <component type="Container" name="Container3" cloudDestinationProperty="Container3" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <component type="Label" name="lblPLayerCover" cloudDestinationProperty="lblPLayerCover" uiid="PlayerIcon" text="" verticalAlignment="4" >
+        <layoutConstraint value="Center" />
+      </component>
+    </component>
+    <component type="Container" name="Container4" cloudDestinationProperty="Container4" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <component type="InfiniteProgress" name="spnPlayerLoading" cloudDestinationProperty="InfiniteProgress" uiid="PlayerLoading" focusable="false" >
+        <layoutConstraint value="North" />
+        <custom name="animation" type="com.codename1.ui.Image" value="loading_spinner.png" />
+      </component>
+    </component>
+    <component type="Container" name="Container2" cloudDestinationProperty="Container2" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <component type="Label" name="lblPLayerCoverMask" cloudDestinationProperty="lblPLayerCover" uiid="PlayerCoverMask" text="" >
+        <layoutConstraint value="South" />
+      </component>
+    </component>
+    <component type="Container" name="Container" cloudDestinationProperty="Container" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <component type="Container" name="Container1" cloudDestinationProperty="Container1" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+        <layoutConstraint value="South" />
+        <component type="Label" name="lblPlayerTitleName" cloudDestinationProperty="Label1" uiid="PlayerTitleName" text="  " >
+          <layoutConstraint value="North" />
+        </component>
+        <component type="Label" name="lblPlayerCurrentTime" cloudDestinationProperty="Label1" uiid="LabelPlayerCurrentTime" scrollVisible="false" snapToGrid="false" text="00:00" verticalAlignment="4" >
+          <layoutConstraint value="West" />
+        </component>
+        <component type="Label" name="lblPlayerPerformerName" cloudDestinationProperty="Label" uiid="PlayerPerformerName" text=" " >
+          <layoutConstraint value="Center" />
+        </component>
+        <component type="Label" name="lblPlayerTotalTime" cloudDestinationProperty="Label" uiid="LabelPlayerTotalTime" text="00:00" >
+          <layoutConstraint value="East" />
+        </component>
+      </component>
+    </component>
+  </component>
+  <component type="Container" name="ctnPlayerControls" cloudDestinationProperty="Container5" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+    <layoutConstraint row="1" column="-1" height="38" width="100" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+    <component type="Slider" name="sldPlayerTime" cloudDestinationProperty="Slider" uiid="SliderPlayer" text="" editable="true" thumbImage="player_handle.png" progress="0" increments="1" renderPercentageOnTop="false" verticalAlignment="4" >
+      <layoutConstraint value="North" />
+    </component>
+    <component type="Container" name="ctnPlayerButtons" cloudDestinationProperty="Container2" uiid="PlayerControls" focusable="false" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="3" >
+      <layoutConstraint value="Center" />
+      <component type="Button" name="btnPlayerPrevious" cloudDestinationProperty="Button4" uiid="PlayerButton" focusable="true" text="" icon="player_prev.png" rolloverIcon="player_prev_active.png" pressedIcon="player_prev_active.png" disabledIcon="player_prev_disabled.png" toggle="false" verticalAlignment="4" >
+      </component>
+      <component type="Button" name="btnPlayerPlayPause" cloudDestinationProperty="Button3" uiid="PlayerButton" focusable="true" text="" icon="player_play.png" verticalAlignment="4" >
+      </component>
+      <component type="Button" name="btnPlayerNext" cloudDestinationProperty="Button2" uiid="PlayerButton" text="" icon="player_next.png" rolloverIcon="player_next_active.png" pressedIcon="player_next_active.png" disabledIcon="player_next_disabled.png" toggle="false" verticalAlignment="4" >
+      </component>
+    </component>
+    <component type="Container" name="ctnPlayerButtons1" cloudDestinationProperty="Container2" uiid="ContainerPlayerOptions" focusable="false" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="4" >
+      <layoutConstraint value="South" />
+      <component type="Button" name="btnPlayerShuffle" cloudDestinationProperty="Button1" uiid="PlayerActionButton" text="" icon="player_shuffle.png" toggle="true" verticalAlignment="4" >
+      </component>
+      <component type="Button" name="btnPlayerPlaylist" cloudDestinationProperty="Button1" uiid="PlayerOptionsButton" text="" icon="player_add-to-playlist.png" rolloverIcon="player_add-to-playlist_active.png" pressedIcon="player_add-to-playlist_active.png" verticalAlignment="4" >
+      </component>
+      <component type="Button" name="btnPlayerAction" cloudDestinationProperty="Button1" uiid="PlayerOptionsButton" text="" icon="player_options.png" rolloverIcon="player_options_active.png" pressedIcon="player_options_active.png" verticalAlignment="4" >
+      </component>
+      <component type="Button" name="btnPlayerRepeat" cloudDestinationProperty="Button" uiid="PlayerActionButton" focusable="true" enabled="true" text="" icon="player_repeat.png" toggle="true" verticalAlignment="4" >
+      </component>
+    </component>
+  </component>
+</component>

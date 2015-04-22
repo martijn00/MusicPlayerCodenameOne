@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="ScreenPerformer" cloudDestinationProperty="ScreenPerformer" uiid="FormWhite" focusable="false" layout="BoxLayout" boxLayoutAxis="Y" title="Performer" >
+  <component type="Container" name="Container" cloudDestinationProperty="Container" layout="TableLayout" tableLayoutRows="2" tableLayoutColumns="1" >
+    <component type="Container" name="Container1" cloudDestinationProperty="Container1" uiid="ContainerArtistText" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <layoutConstraint row="1" column="-1" height="-1" width="100" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+      <component type="Label" name="lblArtistTrackCount" cloudDestinationProperty="lblArtistTrackCount" uiid="LabelArtistText" text="Label" >
+        <layoutConstraint value="East" />
+      </component>
+      <component type="Label" name="lblArtistName" cloudDestinationProperty="lblArtistName" uiid="LabelArtistText" text="Label" >
+        <layoutConstraint value="Center" />
+      </component>
+    </component>
+    <component type="ImageViewer" name="imgArtistImage" cloudDestinationProperty="imgArtistImage" >
+      <layoutConstraint row="0" column="0" height="-1" width="100" align="-1" spanHorizontal="1" valign="-1" spanVertical="2" />
+    </component>
+  </component>
+  <component type="Label" name="Label" cloudDestinationProperty="Label" uiid="LabelArtistHeader" text="performer_appears_in" >
+  </component>
+  <component type="ContainerList" name="ctlArtistAppearsIn" cloudDestinationProperty="ctlArtistAppearsIn" scrollableY="false" layout="BoxLayout" boxLayoutAxis="Y" >
+    <custom name="ListItems" type="java.lang.Object" array="true" dimensions="1" >
+    <mapItems>
+      <stringItem key="btnMediaActionFixed" value="" />
+      <stringItem key="title" value="" />
+      <stringItem key="btnMediaIconFixed" value="" />
+    </mapItems>
+    <mapItems>
+      <stringItem key="btnMediaActionFixed" value="" />
+      <stringItem key="title" value="" />
+      <stringItem key="btnMediaIconFixed" value="" />
+    </mapItems>
+    </custom>
+    <custom name="Renderer" type="com.codename1.ui.list.CellRenderer"  selectedRenderer="ViewCategoryRow" unselectedRenderer="ViewCategoryRow" " />
+  </component>
+  <component type="Label" name="Label1" cloudDestinationProperty="Label1" uiid="LabelArtistHeader" focusable="false" text="performer_all_tracks" >
+  </component>
+  <component type="ContainerList" name="ctlArtistAllTracks" cloudDestinationProperty="ctlArtistAllTracks" scrollableY="false" layout="BoxLayout" boxLayoutAxis="Y" >
+    <custom name="ListItems" type="java.lang.Object" array="true" dimensions="1" >
+    <mapItems>
+      <stringItem key="secondaryTitle" value="" />
+      <stringItem key="btnMediaIcon" value="" />
+      <stringItem key="lblMediaDownloadedState" value="" />
+      <stringItem key="btnMediaActionFixed" value="" />
+      <stringItem key="title" value="" />
+    </mapItems>
+    <mapItems>
+      <stringItem key="secondaryTitle" value="" />
+      <stringItem key="btnMediaIcon" value="" />
+      <stringItem key="lblMediaDownloadedState" value="" />
+      <stringItem key="btnMediaActionFixed" value="" />
+      <stringItem key="title" value="" />
+    </mapItems>
+    </custom>
+    <custom name="Renderer" type="com.codename1.ui.list.CellRenderer"  selectedRenderer="ViewTrackRow" unselectedRenderer="ViewTrackRow" " />
+  </component>
+</component>

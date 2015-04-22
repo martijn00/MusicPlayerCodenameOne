@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Container" name="ViewSettingsCheckboxRow" cloudDestinationProperty="ViewSettingsRow" uiid="ViewSettingsRow" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+  <component type="Button" name="iconOpen" cloudDestinationProperty="Button2" uiid="RowArrow" text="" icon="arrow.png" gap="0" >
+    <layoutConstraint value="East" />
+  </component>
+  <component type="Container" name="Container" cloudDestinationProperty="Container" layout="GridLayout" gridLayoutRows="2" gridLayoutColumns="1" >
+    <layoutConstraint value="Center" />
+    <component type="Label" name="title" cloudDestinationProperty="Label" uiid="LabelSetting" text="Is offline" >
+    </component>
+    <component type="Label" name="subTitle" cloudDestinationProperty="lblSettingsSecondTitle" uiid="LabelSettingValue" text="German" verticalAlignment="4" >
+    </component>
+  </component>
+</component>

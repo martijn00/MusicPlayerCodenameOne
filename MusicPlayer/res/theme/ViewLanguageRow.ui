@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Container" name="ViewLanguageRow" cloudDestinationProperty="ViewLanguageRow" uiid="ViewLanguageRow" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+  <component type="Label" name="longLanguage" cloudDestinationProperty="lblLanguage" uiid="LabelLanguage" text="Language" textPosition="1" >
+    <layoutConstraint value="Center" />
+  </component>
+  <component type="Label" name="lblChosen" cloudDestinationProperty="lblIsChosen" uiid="ImgLanguageIcon" text="" icon="language_check.png" >
+    <layoutConstraint value="East" />
+  </component>
+</component>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="ScreenQueue" cloudDestinationProperty="ScreenQueue" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="Queue" >
+  <component type="List" name="ctlPlayerQueue" cloudDestinationProperty="ctlPlayerQueue" itemGap="0"  selectedRenderer="ViewTrackRow" unselectedRenderer="ViewTrackRow" >
+    <layoutConstraint value="Center" />
+  </component>
+</component>

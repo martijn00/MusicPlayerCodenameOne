@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Container" name="EmbPlayerBottom" cloudDestinationProperty="EmbPlayerBottom" uiid="MiniPlayer" layout="LayeredLayout" >
+  <component type="Slider" name="sldPlayerTime" cloudDestinationProperty="Slider" uiid="SliderMiniPlayer" focusable="false" enabled="true" text="" editable="false" progress="0" increments="1" renderPercentageOnTop="false" verticalAlignment="4" >
+  </component>
+  <component type="Container" name="ctnPlayerButtons" cloudDestinationProperty="Container2" uiid="ContainerPlayerControls" focusable="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+    <component type="Button" name="btnPlayerPlayPause" cloudDestinationProperty="Button3" uiid="MiniPlayerIcon" scrollVisible="true" text="" icon="miniplayer_play.png" rolloverIcon="miniplayer_play.png" pressedIcon="miniplayer_play.png" >
+      <layoutConstraint value="West" />
+    </component>
+    <component type="Container" name="ctnPlayerText" cloudDestinationProperty="ctnPlayerText" leadComponent="btnOpenPlayer" uiid="ContainerPlayerControls" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <layoutConstraint value="Center" />
+      <component type="Label" name="lblSongTitle" cloudDestinationProperty="lblSongTitle" uiid="MiniPlayerTitle" focusable="false" flatten="false" text=" " verticalAlignment="4" textPosition="1" >
+        <layoutConstraint value="Center" />
+      </component>
+      <component type="Label" name="lblPlayerCurrentTime" cloudDestinationProperty="lblSongTitle" uiid="MiniPlayerTitle" focusable="false" flatten="false" text="00:00" verticalAlignment="4" >
+        <layoutConstraint value="East" />
+      </component>
+    </component>
+    <component type="Button" name="btnOpenPlayer" cloudDestinationProperty="btnOpenPlayer" uiid="MiniPlayerIcon" text="" icon="miniplayer_arrow-up.png" rolloverIcon="miniplayer_arrow-up.png" pressedIcon="miniplayer_arrow-up.png" >
+      <layoutConstraint value="East" />
+    </component>
+  </component>
+</component>

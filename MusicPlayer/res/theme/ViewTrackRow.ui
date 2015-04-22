@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Container" name="ViewTrackRow" cloudDestinationProperty="ViewTrackRow" uiid="ViewMediaRow" rtl="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+  <component type="Button" name="btnMediaActionFixed" cloudDestinationProperty="Button1" uiid="RowActionButton" rtl="false" text="" icon="options_static.png" rolloverIcon="options_static.png" pressedIcon="options_static.png" >
+    <layoutConstraint value="East" />
+  </component>
+  <component type="Button" name="btnMediaIcon" cloudDestinationProperty="Button" uiid="RowIcon" text="" icon="category_folder.png" >
+    <layoutConstraint value="West" />
+  </component>
+  <component type="Container" name="ContainerMediaRow" cloudDestinationProperty="Container" uiid="ContainerMediaRow" scrollVisible="false" scrollableY="true" layout="GridLayout" gridLayoutRows="2" gridLayoutColumns="1" >
+    <layoutConstraint value="Center" />
+    <component type="Label" name="lblTitle" cloudDestinationProperty="Label" uiid="LabelMediaBrowse" text="Media name" >
+      <custom name="maskName" type="java.lang.String" value="" />
+    </component>
+    <component type="Label" name="lblSecondaryTitle" cloudDestinationProperty="lblMediaSecondaryTitle" uiid="LabelMediaBrowseSecondaryTitle" scrollVisible="false" text="Artist name" >
+    </component>
+  </component>
+</component>

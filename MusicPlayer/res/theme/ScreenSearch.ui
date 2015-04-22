@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="ScreenSearch" cloudDestinationProperty="ScreenSearch" uiid="FormWhite" scrollableY="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="Search" >
+  <component type="Container" name="Container" cloudDestinationProperty="Container" layout="BoxLayout" boxLayoutAxis="Y" >
+    <layoutConstraint value="North" />
+    <component type="Container" name="ctnTopbar" cloudDestinationProperty="ctnTopbar" uiid="ContainerSearch" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <component type="Button" name="btnAbortSearch" cloudDestinationProperty="btnAddToPlaylist" uiid="ButtonFormTitleIcon" rtl="false" text="" icon="playlist_cancel.png" >
+        <layoutConstraint value="East" />
+      </component>
+      <component type="TextField" name="tfdSearch" cloudBoundProperty="text" cloudDestinationProperty="TextField" uiid="TextFieldSearch" verticalAlignment="4" text="" growByContent="false" maxSize="256" hint="search_hint" >
+        <layoutConstraint value="Center" />
+      </component>
+    </component>
+    <component type="Container" name="ctnSearchFilter" cloudDestinationProperty="ctnSearchFilter" uiid="ContainerSearchOptions" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="4" >
+      <component type="Button" name="btnSearchFilterAll" cloudDestinationProperty="btnSearchFilterAll" uiid="ButtonSearchOption" text="" icon="search_filter_all_static.png" rolloverIcon="search_filter_all_active.png" pressedIcon="search_filter_all_active.png" verticalAlignment="2" textPosition="3" >
+      </component>
+      <component type="Button" name="btnSearchFilterSong" cloudDestinationProperty="btnSearchFilterSong" uiid="ButtonSearchOption" rtl="false" text="" icon="search_filter_song_static.png" rolloverIcon="search_filter_song_active.png" pressedIcon="search_filter_song_active.png" toggle="false" >
+      </component>
+      <component type="Button" name="btnSearchFilterSpeech" cloudDestinationProperty="btnSearchFilterSpeech" uiid="ButtonSearchOption" text="" icon="search_filter_speech_static.png" rolloverIcon="search_filter_speech_active.png" pressedIcon="search_filter_speech_active.png" >
+      </component>
+      <component type="Button" name="btnSearchFilterEbook" cloudDestinationProperty="btnSearchFilterEbook" uiid="ButtonSearchOption" text="" icon="search_filter_audiobook_static.png" rolloverIcon="search_filter_audiobook_active.png" pressedIcon="search_filter_audiobook_active.png" >
+      </component>
+    </component>
+    <component type="Container" name="ctnSearchEmptyResult" cloudDestinationProperty="ctnSearchEmptyResult" scrollVisible="true" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="Container" name="ctnSearchEmptyResultMessage" cloudDestinationProperty="ctnSearchEmptyResultMessage" uiid="ContainerSearchNoResult" >
+        <component type="Label" name="lblSearchNoResult" cloudDestinationProperty="Label1" uiid="LabelSearchNoResults" text="search_no_results_for" >
+        </component>
+        <component type="Label" name="lblSearchEmptyResultKeyword" cloudDestinationProperty="lblSearchEmptyResultKeyword" uiid="LabelSearchResult" text="Coldplay" >
+        </component>
+      </component>
+      <component type="Label" name="lblSearchEmptyResultSuggestionTitle" cloudDestinationProperty="Label" uiid="LabelSearchSuggestion" text="search_suggestions_title" verticalAlignment="4" textPosition="3" >
+      </component>
+    </component>
+  </component>
+  <component type="Container" name="ctnSearchResult" cloudDestinationProperty="Container" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+    <layoutConstraint value="Center" />
+    <component type="List" name="ctlSearchResult" cloudDestinationProperty="ctlSearchResult" itemGap="0"  selectedRenderer="ViewTrackRow" unselectedRenderer="ViewTrackRow" >
+      <layoutConstraint value="Center" />
+    </component>
+  </component>
+</component>

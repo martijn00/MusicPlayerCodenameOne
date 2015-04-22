@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Container" name="ViewSuggestionRow" cloudDestinationProperty="ViewSuggestionRow" uiid="ViewSuggestionRow" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+  <component type="Label" name="lblSearchSuggestionText" cloudDestinationProperty="Label" uiid="LabelSearch" text="Suggestion ..." >
+    <layoutConstraint value="Center" />
+  </component>
+  <component type="Button" name="btnSearchSuggestionIcon" cloudDestinationProperty="Button" uiid="IconButton" text="" icon="search_arrow_static.png" rolloverIcon="search_arrow_static.png" pressedIcon="search_arrow_static.png" disabledIcon="search_arrow_static.png" >
+    <layoutConstraint value="East" />
+  </component>
+</component>

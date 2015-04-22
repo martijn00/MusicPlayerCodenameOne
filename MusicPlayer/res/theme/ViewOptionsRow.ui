@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Container" name="ViewOptionsRow" cloudDestinationProperty="ViewOptionsRow" uiid="ViewOptionsRow" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+  <component type="Button" name="btnOptionsRowIcon" cloudDestinationProperty="btnOptionsRowIcon" uiid="IconButton" text="" icon="arrow.png" >
+    <layoutConstraint value="West" />
+  </component>
+  <component type="Label" name="lblOptionsRowText" cloudDestinationProperty="lblOptionsRowText" uiid="LabelOptionsText" text="Label" >
+    <layoutConstraint value="Center" />
+  </component>
+</component>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="ScreenPlaylist" cloudDestinationProperty="ScreenPlaylist" uiid="FormWhite" scrollableX="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title=" " >
+  <component type="Container" name="ctnTopbarEditing" cloudDestinationProperty="ctnTopbar" uiid="PlaylistEdit" focusable="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+    <layoutConstraint value="North" />
+    <component type="Button" name="btnEditingConfirm" cloudDestinationProperty="btnAddToPlaylist" uiid="ButtonFormTitleIcon" rtl="false" text="" icon="playlist_accept.png" >
+      <layoutConstraint value="East" />
+    </component>
+    <component type="TextField" name="txtEditing" cloudBoundProperty="text" cloudDestinationProperty="txtEditing" uiid="TextFieldPlaylist" verticalAlignment="4" text="" hint="" >
+      <layoutConstraint value="Center" />
+    </component>
+  </component>
+  <component type="Container" name="ctnPlaylist" cloudDestinationProperty="Container" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+    <layoutConstraint value="Center" />
+    <component type="Container" name="ctnOfflineAvailable" cloudDestinationProperty="OfflineAvailable" uiid="ContainerAvailableOffline" layout="BoxLayout" boxLayoutAxis="Y" >
+      <layoutConstraint value="North" />
+      <component type="CheckBox" name="chkPlaylistIsOfflineAvailable" cloudDestinationProperty="CheckBox" uiid="CheckBoxPlaylist" enabled="true" snapToGrid="false" text="playlist_available_offline" toggle="false" selected="false" gap="20" verticalAlignment="0" textPosition="0" >
+      </component>
+      <component type="Container" name="ctnPlaylistProgress" cloudDestinationProperty="ctnPlaylistProgress" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+        <component type="Slider" name="sldPlaylistDownloadingProgress" cloudDestinationProperty="Slider" uiid="SliderPlaylist" text="" progress="0" vertical="false" renderPercentageOnTop="false" gap="1" >
+          <layoutConstraint value="North" />
+        </component>
+      </component>
+    </component>
+    <component type="Container" name="ctnPlaylistItems" cloudDestinationProperty="Container" tensileDragEnabled="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <layoutConstraint value="Center" />
+      <component type="List" name="ctlPlaylistMediaItems" cloudDestinationProperty="ctlPlaylistMediaItems" itemGap="0"  selectedRenderer="ViewTrackRow" unselectedRenderer="ViewTrackRow" >
+        <layoutConstraint value="Center" />
+      </component>
+    </component>
+  </component>
+</component>

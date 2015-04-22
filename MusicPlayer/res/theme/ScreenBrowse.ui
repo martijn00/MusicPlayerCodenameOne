@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="ScreenBrowse" cloudDestinationProperty="ScreenBrowse" uiid="FormWhite" scrollableY="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title=" " >
+  <component type="List" name="ctlBrowseItems" cloudDestinationProperty="ctlBrowseTracks" itemGap="0"  selectedRenderer="ViewTrackRow" unselectedRenderer="ViewTrackRow" >
+    <layoutConstraint value="Center" />
+  </component>
+</component>

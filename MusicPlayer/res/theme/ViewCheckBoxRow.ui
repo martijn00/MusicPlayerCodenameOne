@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Container" name="ViewCheckBoxRow" cloudDestinationProperty="ViewCheckBoxRow" uiid="ViewCheckBoxRow" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+  <component type="Container" name="Container1" cloudDestinationProperty="Container1" layout="BoxLayout" boxLayoutAxis="X" >
+    <layoutConstraint value="Center" />
+    <component type="Label" name="lblSettingsRow" cloudDestinationProperty="Label" uiid="LabelCheckBoxRow" text="Label" >
+    </component>
+    <component type="Label" name="lblSettingsSecondTitle" cloudDestinationProperty="lblSettingsSecondTitle" uiid="LabelLanguageGreen" text="test" >
+    </component>
+  </component>
+  <component type="Container" name="Container" cloudDestinationProperty="Container" layout="BoxLayout" boxLayoutAxis="X" >
+    <layoutConstraint value="East" />
+    <component type="CheckBox" name="cbxSettings" cloudDestinationProperty="CheckBox" text="" >
+    </component>
+    <component type="Button" name="btnSettingsLanguageIcon" cloudDestinationProperty="btnSettingsLanguageIcon" uiid="IconButton" text="" icon="arrow.png" >
+    </component>
+  </component>
+</component>

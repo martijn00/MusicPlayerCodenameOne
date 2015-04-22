@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="ScreenLogin" cloudDestinationProperty="ScreenLogin" uiid="ScreenLogin" scrollVisible="true" scrollableY="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+  <component type="Container" name="ctnLoginScroll" cloudDestinationProperty="Container" uiid="ContainerLogin" scrollableY="true" layout="BoxLayout" boxLayoutAxis="Y" >
+    <layoutConstraint value="Center" />
+    <component type="Label" name="lblLogin" cloudDestinationProperty="Label" uiid="LabelLoginText" enabled="true" scrollVisible="true" text="login_signin_with" >
+    </component>
+    <component type="TextField" name="tfdLoginUsername" cloudBoundProperty="text" cloudDestinationProperty="tfdLoginUsername" uiid="TextFieldUsername" verticalAlignment="4" text="" hint="login_username" >
+    </component>
+    <component type="TextField" name="tfdLoginPassword" cloudBoundProperty="text" cloudDestinationProperty="tfdLoginPassword" uiid="TextFieldPassword" verticalAlignment="4" text="" constraint="65536" hint="login_password" >
+    </component>
+    <component type="Button" name="btnLoginLogin" cloudDestinationProperty="Button1" uiid="ButtonLogin" text="login_button_login" >
+    </component>
+    <component type="Button" name="btnLoginOffline" cloudDestinationProperty="Button1" uiid="ButtonLoginSecondary" text="login_button_offline" >
+    </component>
+    <component type="Button" name="btnLoginCreateAccount" cloudDestinationProperty="Button1" uiid="ButtonLoginSecondary" text="login_create_account" >
+    </component>
+    <component type="Button" name="btnLoginForgotPassword" cloudDestinationProperty="Button1" uiid="ButtonLoginSecondary" text="login_forgot_password" >
+    </component>
+  </component>
+  <custom name="titleAreaUIID" type="java.lang.String" value="TitleArea" />
+</component>

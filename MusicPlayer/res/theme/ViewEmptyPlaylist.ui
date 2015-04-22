@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Container" name="ViewEmptyPlaylist" cloudDestinationProperty="ViewEmptyPlaylist" uiid="ViewEmptyPlaylist" scrollableY="false" layout="BoxLayout" boxLayoutAxis="Y" >
+  <component type="Button" name="Button" cloudDestinationProperty="Button" uiid="ImgPlaylistEmpty" text="" icon="playlist_empty_graphics.png" verticalAlignment="4" textPosition="1" >
+  </component>
+  <component type="Label" name="Label" cloudDestinationProperty="Label" uiid="LabelEmptyPlaylistTitle" text="playlist_empty_playlist" >
+  </component>
+  <component type="SpanLabel" name="SpanLabel" cloudDestinationProperty="SpanLabel" uiid="LabelEmptyPlaylistText" >
+    <custom name="text" type="java.lang.String" value="playlist_empty_find_media" />
+    <custom name="textUiid" type="java.lang.String" value="LabelEmptyPlaylistText" />
+  </component>
+  <component type="Label" name="Label1" cloudDestinationProperty="Label1" uiid="ImgPlaylistEmpty" text=" " >
+  </component>
+</component>

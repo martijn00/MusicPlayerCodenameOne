@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Container" name="ViewCategoryRow" cloudDestinationProperty="ViewCategoryRow" uiid="ViewCategoryRow" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+  <component type="Button" name="btnMediaActionFixed" cloudDestinationProperty="Button1" uiid="RowArrow" rtl="false" text="" icon="arrow.png" gap="0" >
+    <layoutConstraint value="East" />
+  </component>
+  <component type="Button" name="btnMediaIconFixed" cloudDestinationProperty="Button" uiid="IconCategoryButton" flatten="false" text="" icon="category_folder.png" >
+    <layoutConstraint value="West" />
+  </component>
+  <component type="Container" name="ContainerMediaRow" cloudDestinationProperty="Container" uiid="ContainerMediaRow" scrollableY="true" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="1" >
+    <layoutConstraint value="Center" />
+    <component type="Label" name="lblTitle" cloudDestinationProperty="Label" uiid="LabelMediaBrowse" text="Media name" >
+      <custom name="maskName" type="java.lang.String" value="" />
+    </component>
+  </component>
+</component>

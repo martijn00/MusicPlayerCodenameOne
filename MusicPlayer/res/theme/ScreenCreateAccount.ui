@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="ScreenCreateAccount" cloudDestinationProperty="ScreenCreateAccount" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="Create Account" >
+  <component type="WebBrowser" name="WebBrowser" cloudDestinationProperty="WebBrowser" >
+    <layoutConstraint value="Center" />
+    <custom name="url" type="java.lang.String" value="https://github.com" />
+  </component>
+</component>

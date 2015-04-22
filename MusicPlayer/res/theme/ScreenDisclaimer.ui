@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="ScreenDisclaimer" cloudDestinationProperty="ScreenDisclaimer" uiid="FormWhite" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="Disclaimer" >
+  <component type="TextArea" name="lblDisclaimerText" cloudBoundProperty="text" cloudDestinationProperty="TextArea" uiid="DisclaimerLabel" scrollVisible="true" verticalAlignment="0" text=" " editable="false" >
+    <layoutConstraint value="Center" />
+  </component>
+</component>

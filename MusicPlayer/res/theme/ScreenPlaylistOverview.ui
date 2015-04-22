@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="ScreenPlaylistOverview" cloudDestinationProperty="ScreenPlaylistOverview" uiid="FormWhite" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="My playlists" >
+  <component type="Container" name="ctnContent" cloudDestinationProperty="ctnContent" scrollableY="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+    <layoutConstraint value="Center" />
+    <component type="Container" name="ctnAddPlaylistForm" cloudDestinationProperty="ctnAddPlaylistForm" uiid="PlaylistEdit" scrollVisible="true" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <layoutConstraint value="North" />
+      <component type="TextField" name="tfdAddPlaylistFormTitle" cloudBoundProperty="text" cloudDestinationProperty="TextField" uiid="TextFieldPlaylistAdd" verticalAlignment="4" text="" >
+        <layoutConstraint value="Center" />
+      </component>
+      <component type="Button" name="btnAddPlaylistFormSave" cloudDestinationProperty="Button1" uiid="ButtonFormTitleIcon" text="" icon="playlist_accept.png" >
+        <layoutConstraint value="East" />
+      </component>
+    </component>
+    <component type="List" name="ctlOverviewPlaylistList" cloudDestinationProperty="ctlOverviewPlaylistList" itemGap="0"  selectedRenderer="ViewPlaylistRow" unselectedRenderer="ViewPlaylistRow" >
+      <layoutConstraint value="Center" />
+    </component>
+  </component>
+</component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="ScreenNews" cloudDestinationProperty="ScreenNews" uiid="FormWhite" scrollableY="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="News" >
+  <component type="Container" name="ctnListLoading" cloudDestinationProperty="ctnListLoading" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+    <layoutConstraint value="Center" />
+    <component type="List" name="ctlNewsList" cloudDestinationProperty="ctlNewsList" itemGap="0"  selectedRenderer="ViewTrackRow" unselectedRenderer="ViewTrackRow" >
+      <layoutConstraint value="Center" />
+    </component>
+  </component>
+</component>
